@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_height="fill_parent" xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.AddCompanyActivity"
+    android:fillViewport="true">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/header">
+        <!--  Email Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#372c24"
+            android:text="Company Name"/>
+        <EditText android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtCName"
+            android:hint="Company Name"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="20dip"
+            android:singleLine="true"/>
+
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#372c24"
+            android:text="Login"/>
+        <EditText android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtLogin"
+            android:hint="Login"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="20dip"
+            android:singleLine="true"/>
+
+        <!--  Password Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#372c24"
+            android:text="Password"/>
+        <EditText android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtPassword"
+            android:hint="Password"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="20dip"
+            android:singleLine="true"
+            android:inputType="textPassword"/>
+
+        <!--  Password Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#372c24"
+            android:text="Tel"/>
+        <EditText android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtTel"
+            android:hint="Tel"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="20dip"
+            android:inputType="number"/>
+
+
+
+        <Button android:id="@+id/btnSaveCompany"
+            android:layout_width="fill_parent"
+            android:onClick="saveCompany"
+            android:textColor="@android:color/white"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Save"/>
+    </LinearLayout>
+</LinearLayout>
